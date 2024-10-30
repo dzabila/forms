@@ -1,0 +1,118 @@
+body {
+    background-color: #0B1D51;
+    
+}
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #181D27;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    box-shadow: 4px 4px #181D2780;
+    border-radius: 10px;
+}
+.header {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.username {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+#user-name {
+    width: 60%;
+    height: 40px;
+    outline: none;
+    background-color: #181D27;
+    border: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    border-bottom: 2px solid grey;
+}
+#user-name:focus {
+    border-bottom: 2px solid white;
+}
+.usr-name {
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    top: 0%;
+    z-index: 1;
+    left: 20%;
+    letter-spacing: 1px;
+}
+
+
+#user-name:focus +.usr-name {
+    transition-property: all;
+    transition-duration: 0.2s;
+    font-size: 10px;
+    color: #7DF9FF;
+    top: -20%;
+    
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+#password {
+    width: 60%;
+    height: 40px;
+    outline: none;
+    background-color: #181D27;
+    border: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    border-bottom: 2px solid grey;
+}
+.usr-passw {
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    top: 0%;
+    z-index: 1;
+    left: 20%;
+    letter-spacing: 1px;
+}
+#password:focus {
+    border-bottom: 2px solid white;
+}
+#password:focus + .usr-passw {
+    transition-property: all;
+    transition-duration: 0.2s;
+    font-size: 10px;
+    color: #7DF9FF;
+    top: -20%;
+}
+#submit {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -55%);
+    width: 100px;
+    outline: none;
+    height: 30px;
+    background-color: #181D27;
+    color: #7DF9FF;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+    text-transform: uppercase;
+}
+#submit:hover {
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 25px;
+    box-shadow: 2px 2px #7DF9FF;
+}
